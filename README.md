@@ -2,12 +2,12 @@
 
 2022 부산 블록체인 교육 미니프로젝트 
 
-# 선행조건 
+## 선행조건 
 - hyperledger fabric 2.2 LTS 설치
 - docker, docker-compose 설치
 - jq 설치
 
-# 네트워크 수행
+## 네트워크 수행
 
 1. 네트워크 초기화 
 ```shell
@@ -27,7 +27,7 @@ cd 프로젝트 설치 위치/my_project/my_network
 ```
 
 3. 환경설정 및 채널 확인
-해당 내용은 ./createchannel.sh 안에 있음
+    해당 내용은 ./createchannel.sh 안에 있음
 ```shell
 export FABRIC_CFG_PATH=${PWD}/config
 export CORE_PEER_TLS_ENABLED=true
@@ -39,7 +39,7 @@ export CORE_PEER_ADDRESS=localhost:7051
 peer channel list
 ```
 
-# 체인코드 배포
+## 체인코드 배포
 1. deployCC.sh 내 변수 지정 및 설정 부분 변경 
 
 ```shell
@@ -51,7 +51,7 @@ peer lifecycle chaincode --queryinstalled
 peer lifecycle chaincode --querycommitted -C howmuchnet
 ```
 
-# 어플리케이션 수행
+## 어플리케이션 수행
 1. 필요한 파일 다운 
 
 ```shell
@@ -59,7 +59,7 @@ cd 프로젝트 경로/application
 npm install
 node server.js
 ```
-브라우저 : 
+*브라우저 : 
     네트워크 초기화 했을 시 지갑폴더 지우기 
 
 ```shell 
