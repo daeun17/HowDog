@@ -68,7 +68,7 @@ node server.js
 
 2. connection-org1.json 복사하기 
 ```shell
-cp 프로젝트 설치 위치/my_project/organizations/peerOrganization/org1.example.com/connection-org1.json ./
+cp 프로젝트 설치 위치/my_project/my_network/organizations/peerOrganization/org1.example.com/connection-org1.json ./
 ```
 
 3. localhost:3000 접속 
