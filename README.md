@@ -43,7 +43,7 @@ peer channel list
 1. deployCC.sh 내 변수 지정 및 설정 부분 변경 
 
 ```shell
-    ./deployCC.sh 
+./deployCC.sh 
 ```
 2. 체인코드 확인 
 ```shell
