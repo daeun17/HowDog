@@ -80,7 +80,6 @@ func (s *SmartContract) Query_record(ctx contractapi.TransactionContextInterface
 	//히스토리를 읽어오는 것은 포함 완됨 -> marbies_chaincode.go 692line 키가 어떻게 변경되어져 왔ㄴ느지 히스토리를 볼 수 있음
 }
 
-
 //3. Verify_receipt : 영수증에 대한 검증 확인 
 
 func (s *SmartContract) Verify_receipt(ctx contractapi.TransactionContextInterface, rid string, verifier string) error {
